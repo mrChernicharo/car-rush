@@ -1,2 +1,2 @@
 # car-rush
-Python Pygame - game app
+My newest game made entirely with Python and Pygame 
