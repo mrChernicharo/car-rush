@@ -41,18 +41,18 @@ tempo_segundo = 0
 fonte = pygame.font.SysFont('arial black', 30 ) #procurar fonte no sistema sysFont('fonte', tamanho)
 fonte_grd = pygame.font.SysFont('arial black', 50, bold=True, italic=False)
 
-texto = fonte.render('Tempo | 0  ' , True, (255,255,255), (0,0,0))
+texto = fonte.render('Time | 0  ' , True, (255,255,255), (0,0,0))
 pos_texto = texto.get_rect()
 pos_texto.center = (60, 50)
 
-texto2 = fonte.render('Carro | 100  ' , True, (255,255,255), (0,0,0))
+texto2 = fonte.render('Car | 100  ' , True, (255,255,255), (0,0,0))
 pos_texto2 = texto2.get_rect()
 pos_texto2.center = (65, 90)
 
 
-game_over = fonte_grd.render(' FIM DE JOGO ' , True, (255,255,255), (0,0,0))
+game_over = fonte_grd.render(' GAME OVER ' , True, (255,255,255), (0,0,0))
 pos_texto3 = game_over.get_rect()
-pos_texto3.center = (400, 200)
+pos_texto3.center = (350, 200)
 
 pygame.display.set_caption('Car Rush')
 
@@ -145,10 +145,10 @@ while running:
         timer += 1 
     else:
         tempo_segundo += 1
-        texto = fonte.render('Tempo | ' + str(tempo_segundo) +' ', True, (255,255,255), (0,0,0))
+        texto = fonte.render('Time | ' + str(tempo_segundo) +' ', True, (255,255,255), (0,0,0))
         timer = 0
 
-    texto2 = fonte.render('Carro | ' + str(life) + ' ' , True, (255,255,255), (0,0,0))
+    texto2 = fonte.render('Car | ' + str(life) + ' ' , True, (255,255,255), (0,0,0))
     
 
 
